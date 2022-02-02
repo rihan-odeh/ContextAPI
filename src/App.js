@@ -1,14 +1,17 @@
 import React,{useState} from 'react';
-import Wrapper from './context/Wrapper'
-import Navbar from './context/Navbar'
-import FormWrapper from './context/FormWrapper'
+import Wrapper from './Components/Wrapper'
+import Navbar from './Components/Navbar'
+import FormWrapper from './Components/FormWrapper'
 import './App.css';
-import Form from './context/Form';
+
 function App() {
   const [val, setVal] = useState(1);
   return (
     <div className="App">
-      <Form></Form>
+      <Wrapper>
+      <Navbar/>
+      <FormWrapper />
+    </Wrapper>
       
     </div>
   );
